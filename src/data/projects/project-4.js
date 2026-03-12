@@ -6,6 +6,7 @@
 export const project4 = {
   id: "project-4",
   title: "Adobe License Audit & Reclamation Automation",
+  shortTitle: "Adobe License Audit",
   summary: "Fully automated event-driven license governance. Reclaimed ~$65,000 in unused allocations during initial run; eliminated manual audit overhead.",
   thumbnail: "https://placehold.co/400x265/f59e0b/ffffff?text=Adobe+License+Audit",
   overview: `Fully automated Adobe license governance addressing over-allocation and underutilization. EventBridge triggers a Step Functions state machine that provisions an ECS Slack audit bot, sends modal surveys per user per license, and schedules reminders across a multi-week window. At completion, removes non-responders from Okta groups and provides a ServiceNow reinstatement path. Reclaimed ~$65K in unused allocations during the initial run.`,

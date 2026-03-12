@@ -6,6 +6,7 @@
 export const project6 = {
   id: "project-6",
   title: "AI Initiatives & Adoption Engineering",
+  shortTitle: "AI Initiatives",
   summary: "Composite of four high-impact AI initiatives: SpriteGPT stabilization, executive AI adoption metrics, Gemini observability, and Reclaim AI scheduling integration.",
   thumbnail: "https://placehold.co/400x250/06b6d4/ffffff?text=AI+Initiatives",
   overview: `Four AI adoption initiatives: (1) SpriteGPT—stabilized an internal AI review tool before a major cycle by fixing async Workday ingestion bugs, preserving ~300–400 manager hours. (2) ChatGPT pipeline—corrected duplication and SQL logic in Databricks to restore executive adoption dashboards. (3) Gemini observability—built daily EventBridge automation for Datadog metrics with privacy-preserving hashed identifiers. (4) Reclaim—integrated AI scheduling links into Slack profiles via Okta SCIM.`,

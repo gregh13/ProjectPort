@@ -6,6 +6,7 @@
 export const project5 = {
   id: "project-5",
   title: "LRCOP — Launch Readiness Content Orchestration Platform",
+  shortTitle: "LRCOP",
   summary: "Distributed ingestion and AI-assisted content generation system. Reduces manual synthesis time for launch documentation from fragmented Jira, Confluence, and Figma sources.",
   thumbnail: "https://placehold.co/400x250/ef4444/ffffff?text=LRCOP",
   overview: `LRCOP ingests fragmented launch content from Jira, Confluence, Slack, Figma, and Dropbox Paper, then generates AI-assisted first drafts for help docs and launch communications. Built a distributed ingestion engine (API Gateway, SQS, Lambda, DynamoDB, S3) with source-specific workers that crawl nested references. Content is vectorized in a Bedrock Knowledge Base and fed to QuickSuite for structured Confluence drafts.`,
