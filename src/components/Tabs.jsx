@@ -16,7 +16,7 @@ export default function Tabs({ tabs, activeTab, onTabChange }) {
           </button>
         ))}
       </div>
-      <div className="max-h-64 overflow-y-auto pr-2">
+      <div className="min-h-[50vh] max-h-[65vh] overflow-y-auto pr-2">
         <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed whitespace-pre-wrap">
           {tabs.find((t) => t.id === activeTab)?.content}
         </div>

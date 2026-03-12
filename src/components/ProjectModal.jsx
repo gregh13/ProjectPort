@@ -43,15 +43,15 @@ export default function ProjectModal({ project, isOpen, onClose }) {
       />
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[90vh] overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-xl animate-modal-in"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-xl animate-modal-in flex flex-col"
       >
-        <div className="overflow-y-auto max-h-[90vh]">
+        <div className="overflow-y-auto flex-1 min-h-0 flex flex-col">
           <img
             src={project.thumbnail}
             alt={project.title}
-            className="w-full h-48 object-cover"
+            className="w-full h-40 object-cover flex-shrink-0"
           />
-          <div className="p-6">
+          <div className="p-6 flex-1 min-h-[60vh]">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
               {project.title}
             </h2>
