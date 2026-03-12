@@ -1,8 +1,10 @@
-export default function ProjectCard({ project, onClick }) {
+import { Link } from 'react-router-dom'
+
+export default function ProjectCard({ project }) {
   return (
-    <button
-      onClick={() => onClick(project)}
-      className="w-full h-full flex flex-col text-left rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+    <Link
+      to={`/projects/${project.id}`}
+      className="block w-full h-full flex flex-col text-left rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
     >
       <div className="w-full aspect-[8/5] flex-shrink-0 overflow-hidden bg-gray-100 dark:bg-gray-700">
         <img
@@ -31,6 +33,6 @@ export default function ProjectCard({ project, onClick }) {
           </div>
         )}
       </div>
-    </button>
+    </Link>
   )
 }

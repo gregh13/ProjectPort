@@ -6,6 +6,7 @@
 export const project2 = {
   id: "project-2",
   title: "Calendar Sharing Governance Automation",
+  shortTitle: "Calendar Sharing Governance",
   summary: "Real-time event-driven governance that closed a structural security gap. Remediated ~100–200 improperly shared calendars at launch; ~20 unauthorized attempts captured annually.",
   thumbnail: "https://placehold.co/400x250/10b981/ffffff?text=Calendar+Governance",
   overview: `Real-time governance automation that closed a structural Google Workspace security gap: the admin console's single toggle for secondary calendar sharing enabled legitimate vendor access but also permitted public exposure. Built a Python Lambda triggered every 5 minutes to monitor the Google Events API, enforce a granular allow-list, and auto-remediate violations by downgrading to free/busy. Remediated ~100–200 calendars at launch; ~20 unauthorized attempts captured annually.`,
