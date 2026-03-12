@@ -6,7 +6,7 @@
 export const project1 = {
   id: "project-1",
   title: "Google Workspace Lifecycle Governance Automation",
-  summary: "Multi-domain automation eliminating ~800 hours of manual audit work annually. Enforces offboarding, retention, license management, and compliance across four Workspace domains.",
+  summary: "Multi-domain automation eliminating ~900 hours of manual audit work annually. Enforces offboarding, retention, license management, and compliance across four Workspace domains.",
   thumbnail: "https://placehold.co/400x250/3b82f6/ffffff?text=Google+Workspace+Audit",
   overview: `Multi-domain Google Workspace lifecycle governance automation enforcing offboarding, retention, and license management across four Workspace domains. Built in Python as containerized AWS Lambda with RDS state; reconciles user state against Workday, legal hold, and OU policies to suspend, archive, or delete accounts. Eliminated ~800 hours of manual audit work annually and strengthened compliance posture.`,
   technical: `Runtime: AWS Lambda (containerized via Docker), ECR, EventBridge (scheduled and parameterized execution). Domain-specific configurations with Pydantic validation for configuration and event payload integrity.

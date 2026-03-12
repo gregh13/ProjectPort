@@ -6,9 +6,9 @@
 export const project4 = {
   id: "project-4",
   title: "Adobe License Audit & Reclamation Automation",
-  summary: "Fully automated event-driven license governance. Reclaimed ~$50,000 in unused allocations during initial run; eliminated manual audit overhead.",
-  thumbnail: "https://placehold.co/400x250/f59e0b/ffffff?text=Adobe+License+Audit",
-  overview: `Fully automated Adobe license governance addressing over-allocation and underutilization. EventBridge triggers a Step Functions state machine that provisions an ECS Slack audit bot, sends modal surveys per user per license, and schedules reminders across a multi-week window. At completion, removes non-responders from Okta groups and provides a ServiceNow reinstatement path. Reclaimed ~$50K in unused allocations during the initial run.`,
+  summary: "Fully automated event-driven license governance. Reclaimed ~$65,000 in unused allocations during initial run; eliminated manual audit overhead.",
+  thumbnail: "https://placehold.co/400x265/f59e0b/ffffff?text=Adobe+License+Audit",
+  overview: `Fully automated Adobe license governance addressing over-allocation and underutilization. EventBridge triggers a Step Functions state machine that provisions an ECS Slack audit bot, sends modal surveys per user per license, and schedules reminders across a multi-week window. At completion, removes non-responders from Okta groups and provides a ServiceNow reinstatement path. Reclaimed ~$65K in unused allocations during the initial run.`,
   technical: `Trigger: EventBridge (biannual cadence, configurable) initiates AWS Step Functions state machine.
 
 Orchestration: Step Functions launches ECS audit bot, schedules reminder ECS tasks, terminates ECS service at audit completion.

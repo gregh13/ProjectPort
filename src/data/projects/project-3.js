@@ -6,9 +6,9 @@
 export const project3 = {
   id: "project-3",
   title: "Enterprise Whiteboard Migration (Miro → Zoom)",
-  summary: "Large-scale migration of 3,000+ employees from Miro to Zoom Whiteboards. Eliminated ~$250,000 in annual licensing costs under vendor constraints.",
+  summary: "Large-scale migration of 3,000+ employees from Miro to Zoom Whiteboards. Eliminated ~$270,000 in annual licensing costs under vendor constraints.",
   thumbnail: "https://placehold.co/400x250/8b5cf6/ffffff?text=Miro+to+Zoom",
-  overview: `Large-scale migration of 3,000+ employees from Miro to Zoom Whiteboards, eliminating ~$250K annually. Executed under vendor constraints (API throttling, limited export tooling) using controlled batching and retry logic. Built a Python automation with bulk export workflows and a Slack self-service bot with a fairness-based queue. Ran a pilot, validated data integrity, and supported full rollout.`,
+  overview: `Large-scale migration of 3,000+ employees from Miro to Zoom Whiteboards, eliminating ~$270K annually. Executed under vendor constraints (API throttling, limited export tooling) using controlled batching and retry logic. Built a Python automation with bulk export workflows and a Slack self-service bot with a fairness-based queue. Ran a pilot, validated data integrity, and supported full rollout.`,
   technical: `Runtime: AWS Lambda, EventBridge, ECS (Slack bot and long-running workloads), RDS (PostgreSQL), S3 (export artifact storage), CloudWatch.
 
 Containerization: Docker-based architecture, images pushed via GitHub Actions, stored in ECR, deployed to ECS and Lambda.
